@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="1dp"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:scrollbars="horizontal|vertical"
+    android:background="#050505">
+
+    <!--Linear para titulo-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#010101"
+        android:orientation="vertical">
+
+    <!--Linear para titulo lessons-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Top eriDev Movies"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#e8e3e3"
+            android:textSize="25dp" />
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:id="@+id/ivTruman"
+                android:layout_column="0"
+                android:src="@drawable/truman"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView"
+                android:layout_column="1"
+                android:src="@drawable/sicario"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#060606"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView2"
+                android:layout_column="0"
+                android:src="@drawable/sinister"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView3"
+                android:layout_column="1"
+                android:src="@drawable/apellidoscat"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#060606"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/ivBat"
+                android:layout_column="0"
+                android:src="@drawable/batman"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:cropToPadding="false" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/ivBatm"
+                android:layout_column="0"
+                android:src="@drawable/batm"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:cropToPadding="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
